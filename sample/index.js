@@ -36,3 +36,11 @@ console.log(`configService2.instanceCount === ${configService2.instanceCount}`)
 console.log(`databaseService.instanceCount === ${databaseService.instanceCount}`)
 console.log(`databaseService2.instanceCount === ${databaseService2.instanceCount}`)
 
+/*
+ * Any other classes that are not in component graph can retrieve data from component after calling component.inject(this)
+ */
+const MainController = require('./controllers/mainController')
+let mainController = new MainController(appComponent)
+console.log(`mainController.getSecretKeyFromConfigService() === '${mainController.getSecretKeyFromConfigService()}'`)
+console.log(`mainController.loadProductsFromDatabaseService() === ${JSON.stringify(mainController.loadProductsFromDatabaseService())}`)
+

@@ -32,8 +32,8 @@ console.log(`databaseService.loadProducts() === ${JSON.stringify(databaseService
 let configService2 = appComponent.getConfigService()
 let databaseService2 = appComponent.getDatabaseService()
 console.log(`configService.instanceCount === ${configService.instanceCount}`)
-console.log(`configService2.instanceCount === ${configService2.instanceCount}`)
 console.log(`databaseService.instanceCount === ${databaseService.instanceCount}`)
+console.log(`configService2.instanceCount === ${configService2.instanceCount}`)
 console.log(`databaseService2.instanceCount === ${databaseService2.instanceCount}`)
 
 /*

@@ -82,6 +82,8 @@ module.exports = class DatabaseService {
 Use Dagger.Builder to generate component instance. 
 
 ```js
+require('dagger-compiler')
+
 const AppComponent = require('./di/appComponent')
 const AppModule = require('./di/appModule')
 const ServiceModule = require('./di/serviceModule')

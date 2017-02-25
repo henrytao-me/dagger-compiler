@@ -1,5 +1,5 @@
-const ConfigService = require('../service/configService')
-const DatabaseService = require('../service/databaseService')
+const ConfigService = require('../services/configService')
+const DatabaseService = require('../services/databaseService')
 
 @Module
 module.exports = class ServiceModule {

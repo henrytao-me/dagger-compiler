@@ -2,8 +2,9 @@ module.exports = class DatabaseService {
 
   constructor(configService) {
     this.configService = configService
-    this.constructor.initializeCount = this.constructor.initializeCount || 0
-    this.constructor.initializeCount++
+    this.constructor._count = this.constructor._count || 0
+    this.constructor._count += 1
+    this.instanceCount = this.constructor._count
   }
 
   loadProducts() {

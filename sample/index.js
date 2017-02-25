@@ -20,8 +20,19 @@ const appComponent = new Dagger.Builder(AppComponent)
  */
 
 let configService = appComponent.getConfigService()
-let databaseSerice = appComponent.getDatabaseService()
+let databaseService = appComponent.getDatabaseService()
 
-console.log(configService.getSecretKey())
-console.log(databaseSerice.loadProducts())
+console.log(`configService.getSecretKey() === '${configService.getSecretKey()}'`)
+console.log(`databaseService.loadProducts() === ${JSON.stringify(databaseService.loadProducts())}`)
+
+/*
+ * configService is provided as Singleton. So that, its instance is singleton within component scope. 
+ * databaseService is provided as normal. So that, it will return new instance every time it is requested. 
+ */
+let configService2 = appComponent.getConfigService()
+let databaseService2 = appComponent.getDatabaseService()
+console.log(`configService.instanceCount === ${configService.instanceCount}`)
+console.log(`configService2.instanceCount === ${configService2.instanceCount}`)
+console.log(`databaseService.instanceCount === ${databaseService.instanceCount}`)
+console.log(`databaseService2.instanceCount === ${databaseService2.instanceCount}`)
 

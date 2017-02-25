@@ -1,0 +1,26 @@
+{
+  "name": "dagger-compiler",
+  "version": "0.0.1",
+  "description": "Dependency injection for Node like Dagger2 for Android",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrytao-me/dagger-compiler.git"
+  },
+  "keywords": [
+    "node",
+    "dagger",
+    "di",
+    "dependency",
+    "injection"
+  ],
+  "author": "Henry Tao",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/henrytao-me/dagger-compiler/issues"
+  },
+  "homepage": "https://github.com/henrytao-me/dagger-compiler#readme"
+}

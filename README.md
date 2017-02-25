@@ -29,7 +29,7 @@ module.exports = class AppComponent {
 
 ### Define Module 
 
-Module is reponsible for providing dependency instances. Intances can be Singleton. A Singleton is only valid with Component, not global.
+Module is reponsible for providing dependency instances. Intances can be Singleton. A Singleton is only valid within Component, not global.
 
 ```js
 const ConfigService = require('../services/configService')

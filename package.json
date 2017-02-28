@@ -1,6 +1,6 @@
 {
   "name": "dagger-compiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dependency injection for Node like Dagger2 for Android",
   "main": "lib/index.js",
   "scripts": {

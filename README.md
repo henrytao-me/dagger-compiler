@@ -1,4 +1,6 @@
-# dagger-compiler
+# dagger-compiler [![Build Status](https://travis-ci.org/henrytao-me/dagger-compiler.svg?branch=master)](https://travis-ci.org/henrytao-me/dagger-compiler)
+===============
+
 Dependency injection for Node like Dagger2 for Android (https://google.github.io/dagger/)
 
 

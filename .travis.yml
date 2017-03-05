@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "7.5.0"
+
+before_install:
+  - npm install gulp -g
+
+install:
+  - npm install
+
+before_script:
+
+script:
+  - gulp test
+
+after_script:
+  - cat test/results/coverage/*/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  

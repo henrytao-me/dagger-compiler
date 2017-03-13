@@ -1,6 +1,6 @@
 {
   "name": "dagger-compiler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Dependency injection for Node like Dagger2 for Android",
   "main": "lib/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/henrytao-me/dagger-compiler#readme",
   "dependencies": {
-    "core-annotations": "1.0.4"
+    "core-annotations": "1.0.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
